@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User List</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>User List</h1>
+        <ul>
+            <% users.forEach(user => { %>
+                <li>
+                    <p><strong>Name:</strong> <%= user.name %></p>
+                    <p><strong>Age:</strong> <%= user.age %></p>
+                    <p><strong>Email:</strong> <%= user.email %></p>
+                </li>
+            <% }) %>
+        </ul>
+        <a href="/user/new"><button>Add New User</button></a>
+    </div>
+</body>
+</html>

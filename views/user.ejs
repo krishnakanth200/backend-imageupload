@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Details</title>
+    <link rel="stylesheet" href="/user-display.css"> <!-- Link to user display CSS -->
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-info">
+                <h1>User Details</h1>
+                <p><strong>Name:</strong> <%= user.name %></p>
+                <p><strong>Age:</strong> <%= user.age %></p>
+                <p><strong>Email:</strong> <%= user.email %></p>
+                <% if (user.image) { %>
+                    <div>
+                        <p><strong>Image:</strong></p>
+                    </div>
+                <% } %>
+                <a href="/">
+                    <button>Add Another User</button>
+                </a>
+            </div>
+            <% if (user.image) { %>
+                <div class="card-image">
+                    <img src="<%= user.image %>" alt="User Image">
+                </div>
+            <% } %>
+        </div>
+    </div>
+</body>
+</html>

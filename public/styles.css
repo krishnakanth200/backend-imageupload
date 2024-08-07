@@ -1,0 +1,116 @@
+/* styles.css */
+body {
+    font-family: Verdana, sans-serif; /* Changed font family */
+    margin: 0;
+    padding: 0;
+    background-color: #f0f4f8; /* Light blue-gray background color */
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+h1 {
+    color: #2c3e50; /* Dark blue-gray color for headings */
+    text-align: center;
+    margin-top: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background: #ffffff; /* White background for list items */
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #bdc3c7; /* Light gray border */
+    border-radius: 5px;
+}
+
+p {
+    margin: 5px 0;
+    color: #34495e; /* Darker blue-gray color for text */
+}
+
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #ffffff; /* White text color */
+    background-color: #2980b9; /* Deep blue background color */
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 4px #1f3a60; /* Darker blue shadow */
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+button:hover {
+    background-color: #3498db; /* Slightly lighter blue on hover */
+}
+
+button:active {
+    background-color: #1f78c1; /* Even deeper blue when active */
+    box-shadow: 0 2px #1a5276; /* Darker shadow when active */
+    transform: translateY(2px);
+}
+
+.error {
+    background-color: #fff3e0; /* Soft yellow background for error messages */
+    color: #e67e22; /* Dark orange color for error text */
+    border: 1px solid #f7c6c6; /* Light red border */
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+form {
+    background: #ffffff; /* White background for the form */
+    padding: 20px;
+    padding-right: 30px; /* Added padding to the right */
+    border: 1px solid #bdc3c7; /* Light gray border */
+    border-radius: 5px;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+    color: #2c3e50; /* Dark blue-gray color for labels */
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #bdc3c7; /* Light gray border for inputs */
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #2980b9; /* Deep blue for form button */
+    border-color: #1f3a60; /* Darker blue border */
+}
+
+form button:hover {
+    background-color: #3498db; /* Lighter blue on hover */
+}
+
+.container form {
+    margin-top: 30px;
+}
+button
+{
+    background-color: #1f78c1;
+    bo
+}

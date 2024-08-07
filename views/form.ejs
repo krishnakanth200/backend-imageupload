@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Entry Form</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <h1>User Entry Form</h1>
+
+    <form action="/user/new" method="POST" enctype="multipart/form-data">
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" required/>
+        <label for="age">Age:</label>
+        <input type="text" name="age" id="age" required/>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required/>
+        <label for="image">Image:</label>
+        <input type="file" name="image" id="image" required placeholder="Upload your image" accept="image/*"/>
+        <button type="submit">Submit</button>
+    </form>
+    <div class="container">
+        <% if (errors.length > 0) { %>
+            <h3>Errors</h3>
+            <div class="error">
+                <ul>
+                    <% errors.forEach(error => { %>
+                        <li><%= error.msg %></li>
+                    <% }) %>
+                </ul>
+            </div>
+        <% } %>
+    </div>
+</body>
+</html>
